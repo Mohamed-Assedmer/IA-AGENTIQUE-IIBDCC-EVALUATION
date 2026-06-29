@@ -20,10 +20,8 @@ from langgraph.checkpoint.memory import MemorySaver
 from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-# 1. PROVIDE YOUR GROQ API KEY HERE (Replace this with a fresh one if you reset it)
+# The key will be added in classroom or you can use your own
 os.environ["GROQ_API_KEY"] = ""
-
-# Ensure tokenizers operate quietly on Windows
 
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
